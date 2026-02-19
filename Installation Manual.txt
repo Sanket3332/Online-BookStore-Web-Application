@@ -1,0 +1,100 @@
+# 📚 Online Book Store - Installation Manual
+
+## Prerequisites
+- Python installed on your system
+- Internet connection
+- Git (optional, for cloning)
+
+## Step-by-Step Installation Guide
+
+### Step 1: Download the Project
+Option A: Using Git
+```bash
+git clone <your-repository-url>
+cd online-book-store
+```
+
+Option B: Direct Download
+- Download the ZIP file from GitHub
+- Extract the folder to your desired location
+- Open the extracted folder
+
+### Step 2: Open Terminal/Command Prompt
+- Navigate to the project folder
+- Right-click inside the folder and select "Open in Terminal" (Windows) or "Open Terminal here" (Mac/Linux)
+- Alternatively, open terminal and use `cd` command to reach the folder
+
+### Step 3: Install Django
+Run this command first:
+```bash
+pip install django
+```
+
+### Step 4: Install Django for Current User (if Step 3 fails)
+If you get permission errors, run:
+```bash
+pip install django --user
+```
+
+### Step 5: Check and Upgrade PIP (Optional)
+Check if pip needs upgrading:
+```bash
+pip install --upgrade pip
+```
+Note: Skip this step if your pip is already up to date
+
+### Step 6: Install Pillow (Image Processing Library)
+```bash
+pip install pillow
+```
+
+### Step 7: First Attempt to Run the Server
+```bash
+python manage.py runserver
+```
+If you see any errors, proceed to Step 8
+
+### Step 8: Install Pillow for Current User (if Step 6 didn't work)
+```bash
+pip install pillow --user
+```
+
+### Step 9: Run the Server Again
+```bash
+python manage.py runserver
+```
+
+### Step 10: Access the Application
+1. After running the command, you'll see output like:
+   ```
+   Starting development server at http://127.0.0.1:8000/
+   ```
+2. Copy the link: http://127.0.0.1:8000/
+3. Open any web browser (Chrome, Firefox, Edge, etc.)
+4. Paste the link in the address bar
+5. Press Enter to launch the Online Book Store
+
+## 🎉 Congratulations!
+The Online Book Store application should now be running on your system.
+
+
+
+## Quick Command Summary
+```bash
+pip install django
+pip install django --user           # if needed
+pip install --upgrade pip           # optional
+pip install pillow
+python manage.py runserver
+pip install pillow --user           # if first pillow install fails
+python manage.py runserver
+```
+
+## System Requirements
+- OS: Windows 7+/macOS 10.12+/Linux
+- Python: Version 3.6 or higher
+- RAM: 2GB minimum
+- Storage: 100MB free space
+- Browser: Any modern browser (Chrome, Firefox, Safari, Edge)
+
+---
